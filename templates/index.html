@@ -1,0 +1,272 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>MCD - Hora de aventuras</title>
+
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script src="js/acciones.js"></script>
+
+<meta name="viewport" content="width=810px; user-scalable=0;">
+
+</head>
+
+
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="contenedor">
+
+			<div class="cabecera">
+
+				<img src="imagenes/titulo.png">
+
+			</div>
+
+			<div class="pagina" id="pagina1" style="display: ">
+
+				<p class="destacado">Descubre a qué personaje de Hora<br>  de Aventuras te pareces y además,<br> si eres de los primeros 700 participantes </p>
+
+				<p class="destacado">¡cuentas con premio seguro!</p>
+
+				<p><span class="btn" onClick="cambiarSec(2)">¡Participa!</span>
+
+				<p><img src="imagenes/imagen1.png"></p>
+
+			</div>
+
+			<div class="pagina" id="pagina2" style="display: none ">
+
+				<p class="destacado">1. Si tuvieras un súper poder, ¿cuál sería?</p>
+
+				<p class="formulario">
+
+					<input type="radio" name="pregunta1" id="pregunta1a" value="1"><label for="pregunta1a">Ser elástico para entrar en cualquier sitio.</label><br>
+
+					<input type="radio" name="pregunta1" id="pregunta1b" value="2"><label for="pregunta1b">Tener muchos años y aparentar muy pocos.</label><br>
+
+					<input type="radio" name="pregunta1" id="pregunta1c" value="3"><label for="pregunta1c">No me gustaría tener poderes mágicos. </label>
+
+				</p>
+
+				<p class="destacado">2. De tu grupo de amigos, ¿quién eres?</p>
+
+				<p class="formulario">
+
+					<input type="radio" name="pregunta2" id="pregunta2a" value="1"><label for="pregunta2a">La persona irresponsable.</label><br>
+
+					<input type="radio" name="pregunta2" id="pregunta2b" value="2"><label for="pregunta2b">La persona más inteligente.</label><br>
+
+					<input type="radio" name="pregunta2" id="pregunta2c" value="3"><label for="pregunta2c">La persona más aventurera y exploradora.</label>
+
+				</p>
+
+				<p class="destacado">3. ¿Qué es lo que más te gusta hacer?</p>
+
+				<p class="formulario">
+
+					<input type="radio" name="pregunta3" id="pregunta3a" value="1"><label for="pregunta3a">Salir con mis amigos y buscar aventuras.</label><br>
+
+					<input type="radio" name="pregunta3" id="pregunta3b" value="2"><label for="pregunta3b">Ayudar a las personas.</label><br>
+
+					<input type="radio" name="pregunta3" id="pregunta3c" value="3"><label for="pregunta3c">Cantar canciones con mis amigos.</label></p>
+
+				<p><input type="submit" class="btn" value="¡Ver resultado!"  onClick="cambiarSec(3)"></p>
+
+				<p><img src="imagenes/imagen2.png"></p>
+
+			</div>
+
+			<div class="pagina" id="pagina3" style="display: none">
+
+				<div class="resultado" id="princesa" style="display: none">
+
+					<div class="personaje">¡Eres la princesa Chicle!</div>
+
+					<div class="imagen"><img src="imagenes/chicle.png"></div>
+
+					<div class="texto">
+
+						<span class="btn2" onClick="cambiarSec(4)">¡Obtén tu premio!</span>
+
+						<p>Eres una persona muy amable y cariñosa. Disfrutas ayudando a las personas que te rodean.</p>
+
+						<p>Te gusta asumir la responsabilidad y decidir por el bienestar de los demás, pero siempre tomando en cuenta los sentimientos. </p>
+
+						<p>Tu curiosidad te hace una persona culta y muy educada.</p>
+
+					</div>
+
+				</div>
+
+				<div class="resultado" id="finn" style="display: none">
+
+					<div class="personaje">¡Eres Finn el humano!</div>
+
+					<div class="imagen"><img src="imagenes/finn.png"></div>
+
+					<div class="texto">
+
+						<span class="btn2" onClick="cambiarSec(4)">¡Obtén tu premio!</span>
+
+						<p>Eres una persona valiente y responsable. <br>Te gusta luchar por la justicia y disfrutas de los desafíos, incluso cuando incluyen un poco de peligro. </p>
+
+						<p>Aunque como todos los héroes, escondes un lado cariñoso. </p>
+
+						<p>Eres agradable y protector con la gente que te rodea, por lo que cuentas con muchas amistades.</p>
+
+					</div>
+
+				</div>
+
+				<div class="resultado" id="jake" style="display: none">
+
+					<div class="personaje">¡Eres jake el perro!</div>
+
+					<div class="imagen"><img src="imagenes/jake.png"></div>
+
+					<div class="texto">
+
+						<span class="btn2" onClick="cambiarSec(4)">¡Obtén tu premio!</span>
+
+						<p>Cuidas a tus amigos como un hermano mayor, siempre estás dispuesto a opinar y a darles consejos.  </p>
+
+						<p>Pero por muy seri@ que a veces parezcas, sabes pasártelo bien y encontrar espacio para la diversión. </p>
+
+						<p>Eres una persona tranquil@ pero con mucho sentido del humor.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="pagina" id="pagina4" style="display: none">
+
+				<p class="destacado">¡Has ganado un premio que te llevará directo<br> al divertido mundo de Ooo!</p>
+
+				<p>Por favor, rellena el siguiente formulario y nos<br> pondremos en contacto contigo para entregarte el premio.</p>
+
+				<p>selecciona tu premio</p>
+
+				<table width="600" cellpadding="5" cellspacing="7" border="0">
+
+					<tr>
+
+						<td colspan="2">
+
+							<table width="100%" cellpadding="0" cellspacing="0" border="0" class="seleccionpremio">
+
+								<tr>
+
+									<td alig="center"><img src="imagenes/gafas_princesa.png" onclick="document.getElementById('premio1').click();"><br><input type="radio" name="premio" id="premio1" value="gafas_princesa"><label for="premio1">Gafas Princesa chicle</label></td>
+
+									<td alig="center"><img src="imagenes/gafas_jake.png" onclick="document.getElementById('premio2').click();"><br><input type="radio" name="premio" id="premio2" value="gafas_jake"><label for="premio2">Jake el perro</label></td>
+
+									<td alig="center"><img src="imagenes/libros.png" onclick="document.getElementById('premio3').click();"><br><input type="radio" name="premio" id="premio3" value="pack_libros"><label for="premio3">Pack 4 libros</label></td>
+
+								</tr>
+
+							</table>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td><input type="text" class="medio" placeholder="Nombre"></td>
+
+						<td><input type="text" class="medio" placeholder="Apellidos"></td>
+
+					</tr>
+
+					<tr>
+
+						<td colspan="2">
+
+							<input type="email" class="normal" placeholder="Email">
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td colspan="2">
+
+							<input type="text" class="normal" placeholder="Dirección">
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td><input type="text" class="medio" placeholder="Ciudad"></td>
+
+						<td><input type="text" class="medio" placeholder="Código Postal"></td>
+
+					</tr>
+
+					<tr>
+
+						<td><input type="tel" class="medio" placeholder="Teléfono"></td>
+
+						<td><input type="text" class="medio" placeholder="Mes y año de nacimiento"></td>
+
+					</tr>
+
+					<tr>
+
+						<td colspan="2" align="center">
+
+							<input type="checkbox" id="micheck" name="micheck"><label for="micheck">Acepto <a href="#" target="_blank">términos y condiciones</a></label>
+
+						</td>
+
+					</tr>
+
+				</table>
+
+				<p><input type="submit" value="¡Enviar datos!" class="btn" onClick="cambiarSec(5)"></p>
+
+				<p><img src="imagenes/imagen3.png"></p>
+
+			</div>
+
+			<div class="pagina" id="pagina5" style="display: none">
+
+				<p class="destacado">¡Muchas gracias, pronto recibirás<br> noticias de tu premio que te llevará<br> directamente al mundo de ooo! </p>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/nSYVnW_3YH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="spot"></iframe>
+
+				<p>Comparte con tus amigos cual es tu personaje de Hora de aventuras<br>
+
+					<a hre="#compartir" class="btn">Compartir</a></p>
+
+			</div>
+
+		</div>
+
+		<div class="logos">
+
+			<img src="imagenes/logos.png">
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
+

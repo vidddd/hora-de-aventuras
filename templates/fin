@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="formulario.php" method="post" name="form2" id="form2" onsubmit="validateForm(); return false;">
+<div class="pagina" id="pagina4" style="display: block">
+  <p class="destacado">¡Has ganado un premio que te llevará directo<br> al divertido mundo de Ooo!</p>
+  <p>Por favor, rellena el siguiente formulario y nos<br> pondremos en contacto contigo para entregarte el premio.</p>
+  <p>selecciona tu premio</p>
+  <table width="600" cellpadding="5" cellspacing="7" border="0">
+    <tr>
+      <td colspan="2">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="seleccionpremio">
+          <tr>
+            <td alig="center"><img src="imagenes/gafas_princesa.png" onclick="document.getElementById('premio1').click();"><br><input type="radio" name="premio" id="premio1" value="gafas_princesa"><label for="premio1">Gafas Princesa chicle</label></td>
+            <td alig="center"><img src="imagenes/gafas_jake.png" onclick="document.getElementById('premio2').click();"><br><input type="radio" name="premio" id="premio2" value="gafas_jake"><label for="premio2">Jake el perro</label></td>
+            <td alig="center"><img src="imagenes/libros.png" onclick="document.getElementById('premio3').click();"><br><input type="radio" name="premio" id="premio3" value="pack_libros"><label for="premio3">Pack 4 libros</label></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="text" class="medio" name="nombre" id="nombre" placeholder="Nombre"></td>
+      <td><input type="text" class="medio" name="apellidos" id="apellidos" placeholder="Apellidos"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="email" class="normal" name="email" id="email" placeholder="Email">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="text" class="normal" name="direccion" id="direccion" placeholder="Dirección">
+      </td>
+    </tr>
+    <tr>
+      <td><input type="text" class="medio" placeholder="Ciudad" name="ciudad" id="ciudad"></td>
+      <td><input type="text" class="medio" placeholder="Código Postal" name="cp" id="cp"></td>
+    </tr>
+    <tr>
+      <td><input type="tel" class="medio" placeholder="Teléfono" name="telefono" id="telefono"></td>
+      <td><input type="text" class="medio" placeholder="Mes y año de nacimiento" name="nacimiento" id="nacimiento"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="checkbox" id="micheck" name="micheck"><label for="micheck">Acepto <a href="#" target="_blank">términos y condiciones</a></label>
+      </td>
+    </tr>
+  </table>
+  <p><input type="submit" value="¡Enviar datos!" class="btn"></p>
+  <p><img src="imagenes/imagen3.png"></p>
+</div>
+<div class="pagina" id="pagina5" style="display: none">
+  <p class="destacado">¡Muchas gracias, pronto recibirás<br> noticias de tu premio que te llevará<br> directamente al mundo de ooo! </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nSYVnW_3YH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="spot"></iframe>
+  <p>Comparte con tus amigos cual es tu personaje de Hora de aventuras<br>
+    <a hre="#compartir" class="btn">Compartir</a></p>
+</div>
+</form>
+{% endblock %}

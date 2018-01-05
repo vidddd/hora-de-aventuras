@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% set per = '' %}{% set img = '' %}
+{% block content %}
+
+<div class="pagina" id="pagina5" >
+  {% if mensaje == 2 %}
+    <p class="destacado">!!Opps !! Parece que ya has participado </p>
+  {% else %}
+  <p class="destacado">¡Muchas gracias, pronto recibirás<br> noticias de tu premio que te llevará<br> directamente al mundo de ooo! </p>
+  {% endif %}
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nSYVnW_3YH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="spot" onclick="gtag('event', 'Video');"></iframe>
+  <p>Comparte con tus amigos cual es tu personaje de Hora de aventuras<br>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=promofb.es/tab_horadeaventuras/index.php?compartir={{ personaje }}" class="btn" onclick="gtag('event', 'Compartir');">Compartir</a></p>
+</div>
+{% endblock %}
+{% if personaje == 'finn' %}
+  {% set per = 'Finn' %}
+{% endif %}
+{% if personaje == 'princesa' %}
+  {% set per = 'Princesa Chicle' %}
+{% endif %}
+{% if personaje == 'jake' %}
+  {% set per = 'Jake' %}
+{% endif %}
+
+{% block titlecompartir %}
+<meta property="og:title"         content="¡Me ha tocado {{ per }}!" />
+{% endblock %}
+
+{% block imagencompartir %}
+{% if img %}<meta property="og:image"         content="https://promofb.es/tab_horadeaventuras/imagenes/compartir/{{ img }}.jpg" />{% endif %}
+{% endblock %}

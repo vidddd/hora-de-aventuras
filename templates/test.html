@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pagina" id="pagina2" style="display: none ">
+  <p class="destacado">1. Si tuvieras un súper poder, ¿cuál sería?</p>
+  <p class="formulario">
+    <input type="radio" name="pregunta1" id="pregunta1a" value="1"><label for="pregunta1a">Ser elástico para entrar en cualquier sitio.</label><br>
+    <input type="radio" name="pregunta1" id="pregunta1b" value="2"><label for="pregunta1b">Tener muchos años y aparentar muy pocos.</label><br>
+    <input type="radio" name="pregunta1" id="pregunta1c" value="3"><label for="pregunta1c">No me gustaría tener poderes mágicos. </label>
+  </p>
+  <p class="destacado">2. De tu grupo de amigos, ¿quién eres?</p>
+  <p class="formulario">
+    <input type="radio" name="pregunta2" id="pregunta2a" value="1"><label for="pregunta2a">La persona irresponsable.</label><br>
+    <input type="radio" name="pregunta2" id="pregunta2b" value="2"><label for="pregunta2b">La persona más inteligente.</label><br>
+    <input type="radio" name="pregunta2" id="pregunta2c" value="3"><label for="pregunta2c">La persona más aventurera y exploradora.</label>
+  </p>
+  <p class="destacado">3. ¿Qué es lo que más te gusta hacer?</p>
+  <p class="formulario">
+    <input type="radio" name="pregunta3" id="pregunta3a" value="1"><label for="pregunta3a">Salir con mis amigos y buscar aventuras.</label><br>
+    <input type="radio" name="pregunta3" id="pregunta3b" value="2"><label for="pregunta3b">Ayudar a las personas.</label><br>
+    <input type="radio" name="pregunta3" id="pregunta3c" value="3"><label for="pregunta3c">Cantar canciones con mis amigos.</label></p>
+  <p><input type="submit" class="btn" value="¡Ver resultado!"  onClick="cambiarSec(3)"></p>
+  <p><img src="imagenes/imagen2.png"></p>
+</div>
+{% endblock %}
